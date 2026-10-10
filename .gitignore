@@ -1,0 +1,29 @@
+# Dependencias
+node_modules/
+
+# Compilación y builds
+dist/
+dist-ssr/
+out-tsc/
+bazel-out/
+
+# Perfiles temporales de pruebas y capturas
+.chrome-temp-profile/
+.angular/
+
+# Logs del sistema
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Entorno e IDE
+.idea/
+.vscode/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db

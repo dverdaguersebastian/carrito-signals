@@ -1,0 +1,83 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0; padding: 24px;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+        font-size: 15px;
+      }
+      .devtools-header {
+        display: flex; align-items: center;
+        background: #252526;
+        padding: 10px 16px;
+        border-radius: 8px 8px 0 0;
+        border-bottom: 1px solid #3c3c3c;
+      }
+      .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+      .dot-red { background: #ff5f56; }
+      .dot-yellow { background: #ffbd2e; }
+      .dot-green { background: #27c93f; }
+      .title { color: #cccccc; font-weight: bold; margin-left: 12px; font-size: 14px; }
+      .console-body {
+        background: #1e1e1e;
+        border: 1px solid #3c3c3c;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        padding: 16px;
+      }
+      .line {
+        padding: 8px 12px;
+        border-bottom: 1px solid #2d2d2d;
+        display: flex;
+        align-items: center;
+      }
+      .icon { color: #4fc1ff; margin-right: 12px; font-weight: bold; }
+      .time { color: #858585; margin-right: 12px; font-size: 13px; }
+      .prefix { color: #4ec9b0; font-weight: bold; margin-right: 8px; }
+      .msg { color: #ce9178; }
+      .highlight { color: #dcdcaa; font-weight: bold; }
+      .note {
+        margin-top: 16px;
+        padding: 12px;
+        background: #2d3748;
+        border-left: 4px solid #3880ff;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #e2e8f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="devtools-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="title">DevTools Console — CarritoSignalsComponent (Angular effect())</span>
+    </div>
+    <div class="console-body">
+      <div class="line">
+        <span class="icon">&#9658;</span>
+        <span class="time">17:51:51</span>
+        <span class="prefix">[Persistencia]</span>
+        <span class="msg">Estado actual del carrito guardado. Items: </span>
+        <span class="highlight"> 2</span>
+      </div>
+      <div class="line">
+        <span class="icon">&#9658;</span>
+        <span class="time">17:51:51</span>
+        <span class="prefix">[Persistencia]</span>
+        <span class="msg">Estado actual del carrito guardado. Items: </span>
+        <span class="highlight"> 3</span>
+      </div>
+      <div class="note">
+        <strong>Verificación de effect():</strong> La primera línea corresponde a la ejecución inicial al instanciarse el componente (2 productos iniciales). La segunda línea demuestra la reacción automática e inmediata tras ejecutar <code>agregarProductoAleatorio()</code> vía <code>.update()</code>.
+      </div>
+    </div>
+  </body>
+  </html>
+  
